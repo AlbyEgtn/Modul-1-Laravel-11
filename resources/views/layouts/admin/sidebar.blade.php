@@ -10,10 +10,12 @@
             <ul class="menu-header">
             <li class="menu-header">Menu</li>
             <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }}">
-                <a href="{{ route('admin.dashboard') }}" class="nav-link">
-                <i class="fas fa-home"></i>
-                <span>Dashboard</span>
+                <a href="{{ route('admin.dashboard') }}" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span>
                 </a>
+            </li>
+            <li class="{{Route::is('admin.product') ? 'active' : ''}}"><a class="nav-link" href="{{route('admin.product')}}">
+                <i class="fas fa-box"></i>
+                <span>Produk</span></a>
             </li>
             </ul>
         </div>
